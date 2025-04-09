@@ -4,6 +4,7 @@ import SearchForm from './components/SearchForm';
 import './App.css';
 import axios from 'axios';
 import VisualizarTiempos from './components/VisualizarTiempos';
+import UserStatistics from './components/UserStatistics';
 
 function App() {
   const [timeAxios, setTimeAxios] = useState(parseFloat(localStorage.getItem('axiosTime') ?? 0));
@@ -104,6 +105,7 @@ function App() {
         </button>
       </div>
       <VisualizarTiempos timeAxios={timeAxios} timeFetch={timeFetch} />
+      <UserStatistics people={people.axios.concat(people.fetch)} />
       <div className="App-results">
         <div className="result-section">
           <h2>Resultados con Axios</h2>
