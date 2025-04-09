@@ -1,0 +1,14 @@
+.UserStatistics {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.UserStatistics h2 {
+    margin-bottom: 10px;
+}
+
+.UserStatistics p {
+    margin: 5px 0;
+}
